@@ -107,7 +107,7 @@ footer aside ul li a:hover {
   background:  url("../images/banner-girl.png") no-repeat,
    url("../images/flower-bkgd.jpg") no-repeat;
   background-position: top center, center;
-  background-size: 20%, 80%;
+  background-size: 20%, cover;
   height: 500px;
   margin: 0 auto;
   padding: 0px 0px;
