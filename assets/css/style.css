@@ -1,6 +1,86 @@
-p {
-  font-size: 20px;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html {
+  font-size: 14px;
+}
+
+body {
   font-family: 'ralewaylight';
+  color: #2d2d2d;
+}
+
+a:hover {
+  color: #b64036;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'playfair_displayregular';
+}
+
+h2 {
+  font-size: 5.4rem;
+}
+
+h3 {
+  font-size: 4.8rem;
+}
+
+h4 {
+  font-size: 4rem;
+}
+
+p {
+  font-family: 'ralewaylight';
+  margin: 2rem 2rem;
 }
 
 h3 {
@@ -19,12 +99,12 @@ a {
 section {
   margin: 20px 10px;
   text-align: center;
-  font-size: 30px;
 }
 
 header{
   margin: 0 auto;
-  display: block;
+  font-size: 2.3rem;
+  /*display: block;*/
 }
 
 header nav a:hover {
@@ -32,44 +112,45 @@ header nav a:hover {
 }
 
 header nav a img {
-  height: 65px;
+  height: 7.63rem;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .link {
-  position: relative;
-  top: 30px;
-  left: 325px;
-  font-size: 20px;
+  /*position: relative;*/
+  /*top: 30px;*/
+  /*left: 325px;*/
   text-decoration: none;
   margin-left: 10px;
   margin-right: 10px;
 }
 
 
-.logo {
-  float: left;
+.logo a {
   margin-left: 25px;
 }
 
 .cart{
-  float: right;
   margin-right: 25px;
 }
 
 footer {
-  font-size: 15px;
   color: white;
-  background-color: #272828;
+  background-color: #242424;
 
 }
 
 footer section {
-  float: left;
+  text-align: center;
 }
 
 footer section p {
-  text-align: left;
-  font-size: 15px;
+  text-align: center;
 }
 
 footer section a {
@@ -78,19 +159,21 @@ footer section a {
 }
 
 footer aside {
-  float: right;
+  text-align: center;
 }
 
 footer aside li a {
   font-family: 'ralewaylight';
 }
 
-.clearfix {
-  clear: both;
+
+footer aside ul li {
+  display: none;
+  font-size: 2rem;
 }
 
-footer aside{
-  margin: 50px 50px;
+.footer-icon {
+  display: inline-block;
 }
 
 footer aside ul li a {
@@ -100,7 +183,6 @@ footer aside ul li a {
 
 footer aside ul li a:hover {
   text-decoration: underline;
-  color: red;
 }
 
 .masthead {
@@ -136,26 +218,103 @@ footer aside ul li a:hover {
   position: relative;
   top: 175px;
   font-family: 'ralewaylight';
+  z-index: 2;
 }
 
 .masthead h2{
   position: relative;
   top: 150px;
   font-family: 'playfair_displayregular';
+  z-index: 2;
 }
 
 section.sign-up {
   color: white;
-  height: 300px;
+  height: 25rem;
   background: url("../images/wave-bkgd.jpg") no-repeat;
   background-size: 100%;
   background-position: bottom;
 }
 
-.product-links li {
-  display: inline-block;
-  font-family: 'ralewaymedium';
+.product-links ul {
+  display: flex;
+  flex-wrap: wrap;
 }
+
+.link-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-links a {
+  color: white;
+}
+
+.product-links li {
+  font-family: 'ralewaymedium';
+  font-size: 3rem;
+}
+
+.mens-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/mens-category.jpg") no-repeat;
+  background-size: contain;
+}
+
+.mens-link, .womens-link {
+  height: 29rem;
+  width: 58rem;
+  margin: 1rem 1rem;
+}
+
+.trends-link, .glasses-link, .sale-link, .bags-link {
+  height: 29rem;
+  width: 28rem;
+  margin: 1rem 1rem;
+}
+
+.trends-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/trends-category.jpg") no-repeat;
+  background-size: contain;
+}
+
+.glasses-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/glasses-category.jpg") no-repeat;
+  background-size: contain;
+}
+
+.sale-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/sale-category.jpg") no-repeat;
+  background-size: contain;
+}
+
+.bags-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/bags-category.jpg") no-repeat;
+  background-size: contain;
+}
+
+.womens-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../images/womens-category.jpg") no-repeat;
+  background-size: contain;
+}
+
 
 .sign-up h3 {
   position: relative;
@@ -165,11 +324,26 @@ section.sign-up {
 .sign-up p {
   position: relative;
   top: 75px;
+  font-size: 2.1rem;
 }
 
 .sign-up form {
   position: relative;
   top: 75px;
+  height: 50px;
+}
+
+.sign-up form input {
+  height: 75%;
+  width: 40%;
+}
+
+button {
+  background-color: #e2574c;
+  color: white;
+  border-radius: 30%;
+  height: 100%;
+  width: 10%;
 }
 
 .product-carousel li{
@@ -177,6 +351,19 @@ section.sign-up {
 }
 
 .greyed-out {
-  color: grey;
-  font-size: 15px;
+  color: #969696;
+}
+
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+
+
+}
+
+@media screen and (min-width: 1240px) {
+  html {
+    font-size: 16px;
+  }
 }
