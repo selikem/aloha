@@ -190,32 +190,38 @@ a:hover {
 
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'playfairdisplay';
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
 }
 
 h2 {
-  /*font-size: 5.4rem;*/
+  font-family: 'playfairdisplay';
+  line-height: 3rem;
+  font-size: 2.4rem;
 }
 
 h3 {
-  /*font-size: 4.8rem;*/
+  font-family: 'playfairdisplay';
+  font-size: 2.5rem;
+  margin-top: 2rem;
 }
 
 h4 {
-  /*font-size: 4rem;*/
+  font-family: 'ralewaylight';
+  font-weight: normal;
+  line-height: 3rem;
+  font-size: 1.7rem;
 }
 
 p {
   font-family: 'ralewaylight';
   margin: 2rem 2rem;
+  line-height: 2rem;
 }
-
-h3 {
-  font-family: 'playfairdisplay';
-  font-weight: bold;
-}
-
 
 a {
   color: #e2574c;
@@ -227,23 +233,24 @@ section {
   text-align: center;
 }
 
+.nav-container {
+  display: flex;
+  margin: 1rem 1rem;
+
+}
+
 header{
   margin: 0 auto;
-  /*font-size: 2.3rem;*/
-  /*display: block;*/
 }
 
 header nav a:hover {
   text-decoration: underline;
 }
 
-header nav a img {
-  height: 7.63rem;
-}
-
 .nav-container {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -253,13 +260,24 @@ header nav a img {
   margin-right: 10px;
 }
 
-
-.logo a {
-  margin-left: 25px;
+.nav-container nav {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #d7d7d7;
+  margin-top: 1rem;
+  padding-top: 1rem;
 }
 
-.cart{
-  margin-right: 25px;
+.logo {
+  max-width: 125px;
+  align-self: flex-start;
+  order: 1;
+}
+
+.cart  {
+  max-width: 50px;
+  order: 2;
 }
 
 footer {
@@ -270,10 +288,12 @@ footer {
 
 footer section {
   text-align: center;
+  padding-top: 1rem;
 }
 
 footer section p {
   text-align: center;
+  line-height: 1rem;
 }
 
 footer section a {
@@ -283,12 +303,14 @@ footer section a {
 
 footer aside {
   text-align: center;
+  padding-bottom: 1rem;
 }
 
 /* Clobbering */
 .footer-links span.mobile-hidden {
   display: none;
 }
+
 
 footer aside li {
   display: inline-block;
@@ -304,54 +326,47 @@ footer aside ul li a:hover {
 }
 
 .masthead {
-  background:  url("../images/banner-girl.png") no-repeat,
+  background:  linear-gradient( 0deg, rgba(104,104,104,0.25), rgba(71,71,71,0.25), rgba(45,45,45,0.25)) no-repeat, url("../images/banner-girl.png") no-repeat,
    url("../images/flower-bkgd.jpg") no-repeat;
-  background-position: top, center;
-  background-size: 20%, stretch;
-  height: 45rem;
+  background-position: center, bottom, center;
+  background-size: cover, 30%, cover;
+  height: 300px;
   margin: 0 auto;
   padding: 0px 0px;
   color: white;
-  position: relative;
+  position: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   width: 100%;
-  position: relative
-}
-
-
-.overlay {
-    background-color: black;
-    bottom: 0;
-    left: 0;
-    opacity: 0.25;
-    position: absolute;
-    right:0;
-    top:0;
-    z-index: 1;
-}
-
-.masthead h4{
+  max-width: 1240px;
   position: relative;
-  top: 175px;
+}
+
+.masthead h4 {
+  position: relative;
+  top: 100px;
   font-family: 'ralewaylight';
-  z-index: 2;
 }
 
-.masthead h2{
+.masthead h2 { 
   position: relative;
-  top: 150px;
+  top: 100px;
   font-family: 'playfairdisplay';
-  z-index: 2;
 }
 
 section.sign-up {
   color: white;
-  height: 20rem;
-  background: url("../images/wave-bkgd.jpg") no-repeat;
-  background-size: 100%;
-  background-position: bottom;
+  /*height: 20rem;*/
+  background: linear-gradient( 0deg, rgba(104,104,104,0.25), rgba(71,71,71,0.25), rgba(45,45,45,0.25)) no-repeat, url("../images/wave-bkgd.jpg") no-repeat;
+  background-size: cover, 225%;
+  background-position: center, bottom;
+}
+
+.product-links {
+  height: 100%;
 }
 
 .product-links ul {
@@ -362,7 +377,12 @@ section.sign-up {
 .link-container {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
+  align-items: stretch;
+  justify-content: space-between;
 }
+
 
 .product-links a {
   color: white;
@@ -370,8 +390,24 @@ section.sign-up {
 }
 
 .product-links li {
-  font-family: 'ralewaymedium';
-  /*font-size: 3rem;*/
+  font-family: 'ralewaylight';
+  font-weight: bold;
+  font-size: 1.45rem
+}
+
+
+.mens-link, .womens-link {
+  height: 125px;
+  width: 250px;
+  margin: 0.5rem 0.25rem;
+  flex: 2 0 auto;
+}
+
+.trends-link, .glasses-link, .sale-link, .bags-link {
+  height: 125px;
+  width: 125px;
+  margin: 0.5rem 0.25rem;
+  flex: 1 1 auto;
 }
 
 .mens-link {
@@ -379,19 +415,7 @@ section.sign-up {
   justify-content: center;
   align-items: center;
   background: url("../images/mens-category.jpg") no-repeat;
-  background-size: contain;
-}
-
-.mens-link, .womens-link {
-  height: 29rem;
-  width: 58rem;
-  margin: 1rem 1rem;
-}
-
-.trends-link, .glasses-link, .sale-link, .bags-link {
-  height: 29rem;
-  width: 28rem;
-  margin: 1rem 1rem;
+  background-size: cover;
 }
 
 .trends-link {
@@ -399,7 +423,7 @@ section.sign-up {
   justify-content: center;
   align-items: center;
   background: url("../images/trends-category.jpg") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .glasses-link {
@@ -407,7 +431,7 @@ section.sign-up {
   justify-content: center;
   align-items: center;
   background: url("../images/glasses-category.jpg") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .sale-link {
@@ -415,7 +439,7 @@ section.sign-up {
   justify-content: center;
   align-items: center;
   background: url("../images/sale-category.jpg") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .bags-link {
@@ -423,7 +447,7 @@ section.sign-up {
   justify-content: center;
   align-items: center;
   background: url("../images/bags-category.jpg") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .womens-link {
@@ -431,38 +455,19 @@ section.sign-up {
   justify-content: center;
   align-items: center;
   background: url("../images/womens-category.jpg") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
-
-.sign-up h3 {
-  position: relative;
-  top: 75px;
+.sign-up{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.sign-up p {
-  position: relative;
-  top: 75px;
-  /*font-size: 1rem;*/
-}
-
-.sign-up form {
-  position: relative;
-  top: 75px;
-  height: 50px;
-}
-
-.sign-up form input {
-  height: 75%;
-  width: 40%;
-}
 
 button {
   background-color: #e2574c;
   color: white;
-  border-radius: 30%;
-  height: 100%;
-  width: 10%;
+  border-radius: 40%;
 }
 
 .product-carousel li{
