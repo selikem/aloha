@@ -15,6 +15,12 @@ $(function(){
   });
 
   //flickity
+  $('.product-carousel ul').flickity({
+    // options
+    cellSelector: '.carousel-cell',
+    cellAlign: 'center',
+    contain: true
+  });
 
   //alert box behaviour
   $('#signup-form').on('submit', function(event) {
