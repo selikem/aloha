@@ -397,15 +397,15 @@ section.sign-up {
 
 
 .mens-link, .womens-link {
-  height: 125px;
-  width: 250px;
+  height: 175px;
+  width: 300px;
   margin: 0.5rem 0.25rem;
   flex: 2 0 auto;
 }
 
 .trends-link, .glasses-link, .sale-link, .bags-link {
-  height: 125px;
-  width: 125px;
+  height: 175px;
+  width: 175px;
   margin: 0.5rem 0.25rem;
   flex: 1 1 auto;
 }
@@ -414,48 +414,48 @@ section.sign-up {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../images/mens-category.jpg") no-repeat;
-  background-size: cover;
+  background: linear-gradient( 0deg, rgba(104,104,104,0.25), rgba(71,71,71,0.25), rgba(45,45,45,0.25)) no-repeat, url("../images/mens-category.jpg") no-repeat;
+  background-size: cover, cover;
 }
 
 .trends-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../images/trends-category.jpg") no-repeat;
-  background-size: cover;
+  background: linear-gradient( 0deg, rgba(104,104,104,0.25), rgba(71,71,71,0.25), rgba(45,45,45,0.25)) no-repeat, url("../images/trends-category.jpg") no-repeat;
+  background-size: cover, cover;
 }
 
 .glasses-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../images/glasses-category.jpg") no-repeat;
-  background-size: cover;
+  background: linear-gradient( 0deg, rgba(104,104,104,0.25), rgba(71,71,71,0.25), rgba(45,45,45,0.25)) no-repeat, url("../images/glasses-category.jpg") no-repeat;
+  background-size: cover, cover;
 }
 
 .sale-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../images/sale-category.jpg") no-repeat;
-  background-size: cover;
+  background: linear-gradient( 0deg, rgba(104,104,104,0.25), rgba(71,71,71,0.25), rgba(45,45,45,0.25)) no-repeat, url("../images/sale-category.jpg") no-repeat;
+  background-size: cover, cover;
 }
 
 .bags-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../images/bags-category.jpg") no-repeat;
-  background-size: cover;
+  background: linear-gradient( 0deg, rgba(104,104,104,0.25), rgba(71,71,71,0.25), rgba(45,45,45,0.25)) no-repeat, url("../images/bags-category.jpg") no-repeat;
+  background-size: cover, cover;
 }
 
 .womens-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../images/womens-category.jpg") no-repeat;
-  background-size: cover;
+  background: linear-gradient( 0deg, rgba(104,104,104,0.25), rgba(71,71,71,0.25), rgba(45,45,45,0.25)) no-repeat, url("../images/womens-category.jpg") no-repeat;
+  background-size: cover, cover;
 }
 
 .sign-up{
