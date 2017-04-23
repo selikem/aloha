@@ -183,6 +183,7 @@ html {
 body {
   font-family: 'ralewaylight';
   color: #2d2d2d;
+  max-width: 1240px;
 }
 
 a:hover {
@@ -264,6 +265,7 @@ header nav a:hover {
   order: 3;
   width: 100%;
   text-align: center;
+  text-transform: uppercase;
   border-top: 1px solid #d7d7d7;
   margin-top: 1rem;
   padding-top: 1rem;
