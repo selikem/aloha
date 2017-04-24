@@ -3,7 +3,7 @@
 - Create a one page responsive homepage for Aloha Co.
 - Optimize for 3 widths: mobile, min-width: 600px and min-width: 1240px.
 
-##Technologies Used
+## Technologies Used
 
 - git
 - google chrome

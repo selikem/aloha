@@ -176,6 +176,10 @@ table {
 
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 14px;
 }
@@ -183,7 +187,6 @@ html {
 body {
   font-family: 'ralewaylight';
   color: #2d2d2d;
-  max-width: 1240px;
 }
 
 a:hover {
@@ -367,6 +370,7 @@ footer aside ul li a:hover {
   background-position: center, bottom;
 }
 
+
 .product-links {
   height: 100%;
 }
@@ -465,11 +469,17 @@ footer aside ul li a:hover {
   padding-bottom: 1rem;
 }
 
+.sign-up form input {
+  line-height: 1.65rem;
+  border-radius: 25px;
+  width: 30%;
+}
 
 button {
   background-color: #e2574c;
   color: white;
-  border-radius: 40%;
+  border-radius: 25px;
+  line-height: 1.65rem;
 }
 
 .product-carousel li{
@@ -489,6 +499,8 @@ button {
     order: 2;
     width: 65%;
     border-top: 0px solid #d7d7d7;
+    margin-top: 0rem;
+    padding-top: 0rem;
   }
 
   .cart  {
@@ -553,5 +565,27 @@ button {
 }
 
 @media screen and (min-width: 1240px) {
+  .sign-up {
+    background-size: cover, 130%;
+  }
 
+  .masthead {
+  background-position: center, bottom, center;
+  background-size: cover, 15%, cover;
+  height: 500px;
+  }
+
+  .masthead h2, .masthead h4 {
+    top: 200px;
+  }
+
+  .mens-link, .womens-link {
+    height: 250px;
+    width: 500px;
+  }
+
+  .trends-link, .glasses-link, .sale-link, .bags-link {
+    height: 250px;
+    width: 250px;
+  }
 }
