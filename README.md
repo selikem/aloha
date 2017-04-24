@@ -17,7 +17,7 @@
 - Flickity
 
 
-## What I learned
+## Personal Learnings
 
 - How to use bash terminal.
 - How to use git.
