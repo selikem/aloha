@@ -187,6 +187,7 @@ html {
 body {
   font-family: 'ralewaylight';
   color: #2d2d2d;
+  max-width: 1240px;
 }
 
 a:hover {
@@ -233,7 +234,7 @@ a {
 }
 
 section {
-  margin: 20px 10px;
+  margin: 2rem 1rem;
   text-align: center;
 }
 
@@ -260,8 +261,8 @@ header nav a:hover {
 
 .link {
   text-decoration: none;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
 .nav-container nav {
@@ -285,7 +286,7 @@ header nav a:hover {
   order: 2;
 }
 
-footer {
+.footer {
   color: white;
   background-color: #242424;
 
@@ -339,7 +340,6 @@ footer aside ul li a:hover {
   margin: 0 auto;
   padding: 0px 0px;
   color: white;
-  position: flex;
   justify-content: center;
   align-items: center;
 }
@@ -472,7 +472,7 @@ footer aside ul li a:hover {
 .sign-up form input {
   line-height: 1.65rem;
   border-radius: 25px;
-  width: 30%;
+  width: 40%;
 }
 
 button {
