@@ -332,7 +332,7 @@ footer aside ul li a:hover {
 }
 
 .masthead {
-  background:  linear-gradient( 0deg, rgba(104,104,104,0.25), rgba(71,71,71,0.25), rgba(45,45,45,0.25)) no-repeat, url("../images/banner-girl.png") no-repeat,
+  background:  linear-gradient( 0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)) no-repeat, url("../images/banner-girl.png") no-repeat,
    url("../images/flower-bkgd.jpg") no-repeat;
   background-position: center, bottom, center;
   background-size: cover, 30%, cover;
@@ -364,20 +364,11 @@ footer aside ul li a:hover {
 .sign-up {
   color: white;
   margin-top: 4rem;
-  background: linear-gradient( 0deg, rgba(104,104,104,0.25), rgba(71,71,71,0.25), rgba(45,45,45,0.25)) no-repeat, url("../images/wave-bkgd.jpg") no-repeat;
+  background: linear-gradient( 0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)) no-repeat, url("../images/wave-bkgd.jpg") no-repeat;
   background-size: cover, 225%;
   background-position: center, bottom;
 }
 
-
-.product-links {
-  height: 100%;
-}
-
-.product-links ul {
-  display: flex;
-  flex-wrap: wrap;
-}
 
 .link-container {
   display: flex;
@@ -385,7 +376,6 @@ footer aside ul li a:hover {
   width: 100%;
   height: 100%;
   align-items: stretch;
-  justify-content: space-between;
 }
 
 
@@ -397,29 +387,43 @@ footer aside ul li a:hover {
 .product-links li {
   font-family: 'ralewaylight';
   font-weight: bold;
-  font-size: 1.45rem
+  font-size: 2.4rem
 }
 
+.link-name {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+  text-align: center;
+}
+
+.link-name-wide {
+  position: absolute;
+  top: 50%;
+  right: 42%;
+  text-align: center;
+}
 
 .mens-link, .womens-link {
-  height: 175px;
-  width: 300px;
-  margin: 0.5rem 0.25rem;
-  flex: 2 0 auto;
+  flex: 2 0 100%;
+  position: relative;
+  padding-bottom: 49.296%;
+  border: 4px solid #FFF;
 }
 
 .trends-link, .glasses-link, .sale-link, .bags-link {
-  height: 175px;
-  width: 175px;
-  margin: 0.5rem 0.25rem;
-  flex: 1 1 auto;
+  flex: 1 0 40%;
+  position: relative;
+  padding-bottom: 50%;
+  border: 4px solid #FFF;
 }
+
 
 .mens-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient( 0deg, rgba(104,104,104,0.25), rgba(71,71,71,0.25), rgba(45,45,45,0.25)) no-repeat, url("../images/mens-category.jpg") no-repeat;
+  background: linear-gradient( 0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)) no-repeat, url("../images/mens-category.jpg") no-repeat;
   background-size: cover, cover;
 }
 
@@ -427,7 +431,7 @@ footer aside ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient( 0deg, rgba(104,104,104,0.25), rgba(71,71,71,0.25), rgba(45,45,45,0.25)) no-repeat, url("../images/trends-category.jpg") no-repeat;
+  background: linear-gradient( 0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)) no-repeat, url("../images/trends-category.jpg") no-repeat;
   background-size: cover, cover;
 }
 
@@ -435,7 +439,7 @@ footer aside ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient( 0deg, rgba(104,104,104,0.25), rgba(71,71,71,0.25), rgba(45,45,45,0.25)) no-repeat, url("../images/glasses-category.jpg") no-repeat;
+  background: linear-gradient( 0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)) no-repeat, url("../images/glasses-category.jpg") no-repeat;
   background-size: cover, cover;
 }
 
@@ -443,7 +447,7 @@ footer aside ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient( 0deg, rgba(104,104,104,0.25), rgba(71,71,71,0.25), rgba(45,45,45,0.25)) no-repeat, url("../images/sale-category.jpg") no-repeat;
+  background: linear-gradient( 0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)) no-repeat, url("../images/sale-category.jpg") no-repeat;
   background-size: cover, cover;
 }
 
@@ -451,7 +455,7 @@ footer aside ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient( 0deg, rgba(104,104,104,0.25), rgba(71,71,71,0.25), rgba(45,45,45,0.25)) no-repeat, url("../images/bags-category.jpg") no-repeat;
+  background: linear-gradient( 0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)) no-repeat, url("../images/bags-category.jpg") no-repeat;
   background-size: cover, cover;
 }
 
@@ -459,7 +463,7 @@ footer aside ul li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient( 0deg, rgba(104,104,104,0.25), rgba(71,71,71,0.25), rgba(45,45,45,0.25)) no-repeat, url("../images/womens-category.jpg") no-repeat;
+  background: linear-gradient( 0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)) no-repeat, url("../images/womens-category.jpg") no-repeat;
   background-size: cover, cover;
 }
 
@@ -469,7 +473,7 @@ footer aside ul li a:hover {
 }
 
 .sign-up form input {
-  line-height: 1.65rem;
+  line-height: 2rem;
   border-radius: 25px;
   width: 40%;
 }
@@ -521,13 +525,13 @@ button {
   }
 
   .mens-link, .womens-link {
-    height: 125px;
-    width: 258px;
+    flex-basis: 50%;
+    padding-bottom: 24.648%;
   }
 
   .trends-link, .glasses-link, .sale-link, .bags-link {
-    height: 125px;
-    width: 125px;
+    flex-basis: 25%;
+    padding-bottom: 25%;
   }
 
   .sign-up {
@@ -578,13 +582,4 @@ button {
     top: 200px;
   }
 
-  .mens-link, .womens-link {
-    height: 250px;
-    width: 500px;
-  }
-
-  .trends-link, .glasses-link, .sale-link, .bags-link {
-    height: 250px;
-    width: 250px;
-  }
 }
