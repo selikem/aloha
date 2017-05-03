@@ -343,7 +343,7 @@ footer aside ul li a:hover {
   background:  linear-gradient( 0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)) no-repeat, url("../images/banner-girl.png") no-repeat,
    url("../images/flower-bkgd.jpg") no-repeat;
   background-position: center, bottom, center;
-  background-size: cover, 30%, cover;
+  background-size: cover, contain, cover;
   height: 300px;
   margin: 0 auto;
   padding: 0px 0px;
@@ -356,6 +356,7 @@ footer aside ul li a:hover {
 
 .container {
   width: 100%;
+  max-width: 1240px;
 }
 
 .masthead h4 {
@@ -546,7 +547,7 @@ button {
 
   .masthead {
   background-position: center, bottom, center;
-  background-size: cover, 25%, cover;
+  background-size: cover, contain, cover;
   height: 400px;
   }
 
@@ -613,7 +614,7 @@ button {
 
   .masthead {
   background-position: center, bottom, center;
-  background-size: cover, 15%, cover;
+  background-size: cover, contain, cover;
   height: 500px;
   }
 
