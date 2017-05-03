@@ -3,22 +3,22 @@
     <head>
         <title>Aloha Apparel Co.</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="assets/lib/flickity/flickity.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="lib/flickity/flickity.min.css">
+        <link rel="stylesheet" href="css/style.css">
         <script src="https://use.fontawesome.com/d87b421915.js"></script>
     </head>
     <body>
-        <header>
-            <div class="nav-container">
-                <img class="logo" src="assets/images/aloha-logo.svg" alt="logo">
-                <nav>
-                    <a href="#about" class="link"><b>About</b></a>
-                    <a href="#shop" class="link"><b>Shop</b></a>
-                    <a href="#featured" class="link"><b>Featured</b></a>
-                    <a href="#updates" class="link"><b>Updates</b></a>
-                </nav>
-                <img class="cart" src="assets/images/cart-icon.svg" alt="cart">
-            </div>
+        <header class="nav-container">
+            <a class="screen-reader-text" href="#about">Skip to content</a>
+            <img class="logo" src="images/aloha-logo.svg" alt="logo">
+            <nav>
+                <a href="#about" class="link"><b>About</b></a>
+                <a href="#shop" class="link"><b>Shop</b></a>
+                <a href="#featured" class="link"><b>Featured</b></a>
+                <a href="#updates" class="link"><b>Updates</b></a>
+            </nav>
+            <img class="cart" src="images/cart-icon.svg" alt="cart">
         </header>
         <div class="container">
              <section class="masthead">
@@ -26,7 +26,7 @@
                 <h2>Spring/Summer 2016</h2>
              </section>
         </div>
-        <section class="product-links" id="about">
+        <section class="product-links" id="about" tabindex="-1">
             <h3><em>Hand-Crafted</em> <strong>Styles</strong></h3>
             <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
             <div class="link-container" id="shop">
@@ -41,10 +41,10 @@
         <section class="product-carousel" id="featured">
             <h3><em>Most-Loved</em> <strong>Products</strong></h3>
             <ul>
-                <li class="carousel-cell"><img src="assets/images/checked-stretch-dress.jpg" alt="checked stretch dress"><br><span class="greyed-out">Dresses</span><br><a href="">Checked Stretch Dress</a><br><span class="greyed-out">$129.00</span></li>
-                <li class="carousel-cell"><img src="assets/images/blue-hipster-backpack.jpg" alt="blue hipster backpack"><br><span class="greyed-out">Bags</span><br><a href="">Blue Hipster Backpack</a><br><span class="greyed-out">$69.00</span></li>
-                <li class="carousel-cell"><img src="assets/images/demin-overall-shorts.jpg" alt="denim overall shorts"><br><span class="greyed-out">Demin</span><br><a href="">Demin Overall Shorts</a><br><span class="greyed-out">$89.00</span></li>
-                <li class="carousel-cell"><img src="assets/images/pink-dotted-dress.jpg" alt="pink dotted dress"><br><span class="greyed-out">Dresses</span><br><a href="">Pink Dotted Dress</a><br><span class="greyed-out">$99.00</span></li>
+                <li class="carousel-cell"><img src="images/checked-stretch-dress.jpg" alt="checked stretch dress"><br><span class="greyed-out">Dresses</span><br><a href="">Checked Stretch Dress</a><br><span class="greyed-out">$129.00</span></li>
+                <li class="carousel-cell"><img src="images/blue-hipster-backpack.jpg" alt="blue hipster backpack"><br><span class="greyed-out">Bags</span><br><a href="">Blue Hipster Backpack</a><br><span class="greyed-out">$69.00</span></li>
+                <li class="carousel-cell"><img src="images/demin-overall-shorts.jpg" alt="denim overall shorts"><br><span class="greyed-out">Demin</span><br><a href="">Demin Overall Shorts</a><br><span class="greyed-out">$89.00</span></li>
+                <li class="carousel-cell"><img src="images/pink-dotted-dress.jpg" alt="pink dotted dress"><br><span class="greyed-out">Dresses</span><br><a href="">Pink Dotted Dress</a><br><span class="greyed-out">$99.00</span></li>
             </ul>
         </section>
         <section class="sign-up" id="updates">
@@ -75,8 +75,8 @@
                 </ul>
             </aside>
         </footer>
-        <script src="assets/lib/jquery-3.2.1.min.js"></script>
-        <script src="assets/lib/flickity/flickity.pkgd.min.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="lib/jquery-3.2.1.min.js"></script>
+        <script src="lib/flickity/flickity.pkgd.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

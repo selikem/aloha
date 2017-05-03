@@ -16,9 +16,8 @@ $(function(){
 
   //flickity
   $('.product-carousel ul').flickity({
-    // options
+    cellAlign: 'left',
     cellSelector: '.carousel-cell',
-    cellAlign: 'center',
     contain: true
   });
 

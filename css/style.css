@@ -185,7 +185,7 @@ html {
 }
 
 body {
-  font-family: 'ralewaylight';
+  font-family: 'ralewaylight',Arial, Helvetica, sans-serif;
   color: #2d2d2d;
 }
 
@@ -203,26 +203,26 @@ strong {
 }
 
 h2 {
-  font-family: 'playfairdisplay';
+  font-family: 'playfairdisplay', Arial, Helvetica, sans-serif;
   line-height: 3rem;
   font-size: 2.4rem;
 }
 
 h3 {
-  font-family: 'playfairdisplay';
+  font-family: 'playfairdisplay',Arial, Helvetica, sans-serif;
   font-size: 2.5rem;
   margin-top: 2rem;
 }
 
 h4 {
-  font-family: 'ralewaylight';
+  font-family: 'ralewaylight',Arial, Helvetica, sans-serif;
   font-weight: normal;
   line-height: 3rem;
   font-size: 1.7rem;
 }
 
 p {
-  font-family: 'ralewaylight';
+  font-family: 'ralewaylight',Arial, Helvetica, sans-serif;
   margin: 2rem 2rem;
   line-height: 2rem;
 }
@@ -235,6 +235,24 @@ a {
 section {
   margin: 2rem 1rem;
   text-align: center;
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+   clip: auto !important;
+   display: block;
+   height: auto;
+   left: 5px;
+   top: 5px;
+   width: auto;
+   z-index: 100000;
 }
 
 .nav-container {
@@ -342,9 +360,9 @@ footer aside ul li a:hover {
 .masthead {
   background:  linear-gradient( 0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)) no-repeat, url("../images/banner-girl.png") no-repeat,
    url("../images/flower-bkgd.jpg") no-repeat;
-  background-position: center, bottom, center;
-  background-size: cover, contain, cover;
-  height: 300px;
+  background-position: center, center 60px, center;
+  background-size: cover, 150px 370px, cover;
+  height: 400px;
   margin: 0 auto;
   padding: 0px 0px;
   color: white;
@@ -361,13 +379,13 @@ footer aside ul li a:hover {
 .masthead h4 {
   position: relative;
   top: 100px;
-  font-family: 'ralewaylight';
+  font-family: 'ralewaylight',Arial, Helvetica, sans-serif;
 }
 
 .masthead h2 { 
   position: relative;
   top: 100px;
-  font-family: 'playfairdisplay';
+  font-family: 'playfairdisplay',Arial, Helvetica, sans-serif;
 }
 
 .sign-up {
@@ -389,7 +407,14 @@ footer aside ul li a:hover {
   -ms-flex-align: stretch;
       align-items: stretch;
 }
+#main[tabindex="-1"]:focus {
+   outline: 0;
+}
 
+.product-links {
+  margin-top: 0px;
+  padding-top: 2rem;
+}
 
 .product-links a {
   color: white;
@@ -397,7 +422,7 @@ footer aside ul li a:hover {
 }
 
 .product-links li {
-  font-family: 'ralewaylight';
+  font-family: 'ralewaylight',Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 2.4rem;
 }
@@ -547,8 +572,8 @@ button {
   }
 
   .masthead {
-  background-position: center, bottom, center;
-  background-size: cover, contain, cover;
+  background-position: center, center 60px, center;
+  background-size: cover, 155px 375px, cover;
   height: 400px;
   }
 
@@ -614,9 +639,9 @@ button {
   }
 
   .masthead {
-  background-position: center, bottom, center;
-  background-size: cover, contain, cover;
-  height: 500px;
+  background-position: center, center 60px, center;
+  background-size: cover, 250px 615px, cover;
+  height: 550px;
   }
 
   .masthead h2, .masthead h4 {
