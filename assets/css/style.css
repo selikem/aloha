@@ -356,7 +356,6 @@ footer aside ul li a:hover {
 
 .container {
   width: 100%;
-  max-width: 1240px;
 }
 
 .masthead h4 {
@@ -400,21 +399,23 @@ footer aside ul li a:hover {
 .product-links li {
   font-family: 'ralewaylight';
   font-weight: bold;
-  font-size: 2.4rem
+  font-size: 2.4rem;
 }
 
 .link-name {
   position: absolute;
   top: 50%;
-  right: 30%;
+  left: 50%;
   text-align: center;
+  transform: translateX(-50%);
 }
 
 .link-name-wide {
   position: absolute;
   top: 50%;
-  right: 42%;
+  left: 50%;
   text-align: center;
+  transform: translateX(-50%);
 }
 
 .mens-link, .womens-link {
