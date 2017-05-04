@@ -233,7 +233,7 @@ a {
 }
 
 section {
-  margin: 2rem 1rem;
+  margin-bottom: 0.5rem;
   text-align: center;
 }
 
@@ -535,7 +535,7 @@ footer aside ul li a:hover {
 #signup-form {
   margin: 2rem auto 0;
   position: relative;
-  width: 90%;
+  width: 80%;
 }
 
 .sign-up form input {
@@ -614,6 +614,9 @@ footer aside ul li a:hover {
   .sign-up {
     background-size: cover, 180%;
   }
+  #signup-form {
+    width: 60%;
+  }
 
   footer {
     display: -ms-flexbox;
@@ -650,6 +653,10 @@ footer aside ul li a:hover {
 @media screen and (min-width: 1240px) {
   .sign-up {
     background-size: cover, 130%;
+  }
+
+  #signup-form {
+    width: 30%;
   }
 
   .masthead {
