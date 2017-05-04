@@ -335,6 +335,7 @@ footer section a {
 
 footer aside {
   text-align: center;
+  margin: 1.5%;
   padding-bottom: 1rem;
 }
 
@@ -531,17 +532,30 @@ footer aside ul li a:hover {
   padding-bottom: 1rem;
 }
 
+#signup-form {
+  margin: 2rem auto 0;
+  position: relative;
+  width: 90%;
+}
+
 .sign-up form input {
   line-height: 2rem;
   border-radius: 25px;
-  width: 40%;
+  padding: 0.2rem 1rem;
+  width: 100%;
 }
 
-button {
+#signup-form button {
   background-color: #e2574c;
-  color: white;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.7rem 1.5rem;
+  border: none;
   border-radius: 25px;
-  line-height: 1.65rem;
+  outline: 0;
+  position: absolute;
+  right: .25rem;
+  top: .25rem;
 }
 
 .product-carousel li{
