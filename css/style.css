@@ -393,7 +393,6 @@ footer aside ul li a:hover {
   color: white;
   margin-top: 4rem;
   background: linear-gradient( 0deg, rgba(0,0,0,0.25), rgba(0,0,0,0.25)) no-repeat, url("../images/wave-bkgd.jpg") no-repeat;
-  background-size: cover, 225%;
   background-position: center, bottom;
 }
 
@@ -611,9 +610,6 @@ footer aside ul li a:hover {
     padding-bottom: 25%;
   }
 
-  .sign-up {
-    background-size: cover, 180%;
-  }
   #signup-form {
     width: 60%;
   }
@@ -651,9 +647,6 @@ footer aside ul li a:hover {
 }
 
 @media screen and (min-width: 1240px) {
-  .sign-up {
-    background-size: cover, 130%;
-  }
 
   #signup-form {
     width: 30%;
