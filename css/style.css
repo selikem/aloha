@@ -401,7 +401,7 @@ footer aside ul li a:hover {
       align-items: stretch;
 }
 
-#about[tabindex="-1"]:focus {
+.product-links[tabindex="-1"]:focus {
    outline: 0;
 }
 
@@ -530,7 +530,7 @@ footer aside ul li a:hover {
   padding-bottom: 1rem;
 }
 
-#signup-form {
+.sign-up form {
   margin: 2rem auto 0;
   position: relative;
   width: 80%;
@@ -543,7 +543,7 @@ footer aside ul li a:hover {
   width: 100%;
 }
 
-#signup-form button {
+.sign-up form button {
   background-color: #e2574c;
   color: #fff;
   cursor: pointer;
@@ -609,7 +609,7 @@ footer aside ul li a:hover {
     padding-bottom: 25%;
   }
 
-  #signup-form {
+  .sign-up form {
     width: 60%;
   }
 
@@ -647,7 +647,7 @@ footer aside ul li a:hover {
 
 @media screen and (min-width: 1240px) {
 
-  #signup-form {
+  .sign-up form {
     width: 30%;
   }
 
