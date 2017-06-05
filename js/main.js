@@ -19,7 +19,8 @@ $(function(){
     cellAlign: 'left',
     cellSelector: '.carousel-cell',
     contain: true,
-    wrapAround: true
+    wrapAround: true,
+    percentPosition: false
   });
 
   //alert box behaviour

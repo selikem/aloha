@@ -564,6 +564,14 @@ footer aside ul li a:hover {
   color: #969696;
 }
 
+.carousel-cell {
+  width: 100%;
+}
+
+.link-name, .link-name-wide {
+    font-size: 2rem;
+  }
+
 @media screen and (min-width: 600px) {
   html {
     font-size: 16px;
@@ -643,6 +651,9 @@ footer aside ul li a:hover {
     display: flex;
   }
 
+  .carousel-cell {
+    width: auto;
+  }
 }
 
 @media screen and (min-width: 1240px) {
