@@ -18,7 +18,8 @@ $(function(){
   $('.product-carousel ul').flickity({
     cellAlign: 'left',
     cellSelector: '.carousel-cell',
-    contain: true
+    contain: true,
+    wrapAround: true
   });
 
   //alert box behaviour
